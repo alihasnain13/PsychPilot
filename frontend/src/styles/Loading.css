@@ -1,0 +1,42 @@
+.background {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left :0;
+    z-index: 100;
+
+}
+
+.loading-container {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+    padding: 5vw;
+    background-color: transparent;
+    /* background-color: rgb(241, 242, 243); */
+    z-index: 100;
+    border-radius: 30px;
+
+}
+
+.welcome-message {
+    font-size: 24px;
+    color: #74007a;
+    font-size: x-large;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 100;
+
+}

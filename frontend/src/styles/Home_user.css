@@ -1,0 +1,231 @@
+.MainPage {
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: azure;
+}
+
+.TopBar {
+  /* display: flex;
+  justify-content: left;
+  background-color: #C31C7E;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius:0px ;
+  border-bottom-right-radius:0px ;
+  color: #3a2568;
+  padding: 10px; */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3E2477;
+
+  /* background: linear-gradient(0deg, hsla(259, 48%, 28%, 1) 0%, hsla(325, 75%, 44%, 1) 100%);
+
+  background: -moz-linear-gradient(0deg, hsla(259, 48%, 28%, 1) 0%, hsla(325, 75%, 44%, 1) 100%);*/
+
+  background: -webkit-linear-gradient(0deg, hsla(259, 48%, 28%, 1) 0%, hsla(325, 75%, 44%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3A2568", endColorstr="#C31C7E", GradientType=1);
+
+  transition: top 0.3s;
+  padding: 10px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  /* border: 0.5px solid #e0e0e0; */
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.Section {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.Section:hover {
+  transform: scale(1.15);
+}
+
+.Link {
+  color: rgb(201, 223, 223);
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 1.5vh;
+}
+
+.ProfileSection {
+
+  /* position: fixed;
+  margin-right: 50px;
+  right: 1px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; */
+  margin-left: 0;
+  margin-right: 1.5vw;
+  height: 25px;
+}
+
+.ProfileIcon {
+  color: white;
+  margin-right: 5px;
+}
+.white-line {
+  width: auto;
+  height: 0.3px;
+  background-color: rgb(198, 196, 196);
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.DropdownMenu_ {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 80px;
+  right: 0px;
+  left: auto;
+  top: 45px;
+  height: auto;
+  background-color: #41256b57;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+
+
+
+
+.dropButton{
+  display: flex;
+    width: inherit;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0px;
+    /* border-radius: 15px; */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
+    transition: background-color 0.3s;
+    background-color: #3a2568;
+    border-color: #3a2568;
+    border-width: 0px;
+    font-size: 10px;
+    padding: 17px;
+    box-shadow: rgba(83, 17, 141, 0.8);
+}
+
+button:hover {
+  background-color: #C31C7E;;
+}
+/* h2{
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+h1{
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+p{
+  font-family: 'Bebas Neue', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+} */
+
+
+.Content {
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 1fr;
+  grid-template-rows: 33.33vh 33.33vh 33.33vh;
+  justify-content: center;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vh;
+  align-content: space-between;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.headingComponent{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  justify-content:flex-start;
+  text-align: center;
+  align-items: center;
+
+}
+
+.text-animation {
+  animation: fadeIn 2s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.infoElement1{
+  display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    align-content: stretch;
+    justify-items: center;
+    grid-template-columns: 1fr 0.7fr;
+}
+.infoElement2{
+  display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    align-content: stretch;
+    justify-items: center;
+    grid-template-columns: 1fr 0.7fr;
+}
+.infoElement3{
+  display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    align-content: stretch;
+    justify-items: center;
+    grid-template-columns: 1fr 0.7fr;
+}
+
+.InfoComponent {
+  margin-right: 20px;
+  text-align: start;}
+
+.PictureComponent {
+  text-align: center;
+}
+
+.PictureComponentHead {
+  grid-column: 3/3;
+  grid-row: 1/2;
+  width: 200px;
+}
+
+.PictureComponent img {
+  max-width: 50%;
+  height: auto;
+}

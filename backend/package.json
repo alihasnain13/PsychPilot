@@ -1,0 +1,32 @@
+{
+  "name": "1bproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/auth": "^1.0.0",
+    "@pinecone-database/pinecone": "^0.1.6",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "connect-redis": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase": "^10.0.0",
+    "firebase-admin": "^11.9.0",
+    "mongoose": "^7.3.2",
+    "officegen": "^0.6.5",
+    "openai": "^3.3.0",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

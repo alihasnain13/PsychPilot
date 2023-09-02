@@ -1,0 +1,142 @@
+/* Base style for the message container */
+.message-container {
+  display: grid;
+
+  margin-bottom: 8px;
+  justify-items: stretch;
+}
+
+/* Style for the bot message container */
+.bot-message {
+  justify-content: flex-start;
+}
+
+/* Style for the user message container */
+.user-message {
+  justify-content: flex-end;
+}
+
+/* Base style for the message content */
+.message-content {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+/* Style for the bot message content */
+.bot-content {
+  background-color: #3a2568;
+  color: white;
+}
+
+/* Style for the user message content */
+.user-content {
+  background-color: #C31C7E;
+  color: white;
+}
+
+
+.closeButton {
+  font-size: 2rem;
+  position: relative;
+  top: 0%;
+  left: 98.5%;
+  cursor: pointer;
+  transform: rotate(45deg);
+  padding: 5px 10px;
+  background: transparent;
+  border-radius: 4px;
+  border: none;
+}
+
+
+.closeButton:hover {
+  color: #C31C7E;
+  background-color: transparent;
+
+}
+
+.headingchatbox {
+
+  position: static;
+  margin-left: 37%;
+}
+
+
+
+.conversationBorder {
+  overflow-y: scroll;
+  height: 70vh;
+  border-top: 1px solid #C31C7E;
+  padding: 1px;
+
+  
+}
+
+
+/* Small devices (landscape phones) */
+@media (max-width: 576px) {
+
+  .headingchatbox {
+    margin-left: 24%;
+  }
+
+
+
+
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .headingchatbox {
+    margin-left: 30%;
+  }
+
+
+
+}
+
+/* Large devices (desktops) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .headingchatbox {
+    margin-left: 34%;
+  }
+ 
+
+
+}
+
+@media (max-width: 850px) {
+
+  
+  .ContentConvers {
+        
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .headingchatbox {
+    margin-left: 37%;
+  }
+
+
+
+}
+
+/* Extra extra large devices (larger desktops) */
+@media (min-width: 1200px) {
+
+  .headingchatbox {
+    margin-left: 40%;
+  }
+
+}

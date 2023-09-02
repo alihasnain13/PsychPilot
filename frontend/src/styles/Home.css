@@ -1,0 +1,391 @@
+ .-body {
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to right, #ffffff, #cccaca, #ffffff);
+   overflow-y: scroll;
+ }
+
+
+ .App-header {
+
+   width: 100vw;
+   height: max-content;
+ }
+
+ .content {
+  margin-top: 20vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   transition: opacity 4s ease;
+   grid-gap: 100px;
+   align-content: space-around;
+   justify-items: center;
+ }
+
+ .content.show {
+   opacity: 1;
+ }
+
+ .h {
+   text-align: center;
+   background-color: -webkit-linear-gradient(0deg, hsla(259, 48%, 28%, 1) 0%, hsla(325, 75%, 44%, 1) 100%);
+   font-weight: bolder;
+   font-size:5rem;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 5%;
+ }
+
+ h6 {
+   text-align: center;
+   color: rgb(0, 0, 0);
+   font-weight: bolder;
+   font-size: xx-small;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 5%;
+ }
+
+ .imgContent{
+  display: grid;
+  grid-template-columns: 43vw 49vw;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+
+.text{
+  font-variant: small-caps;
+  text-align-last: start;
+}
+
+.imgContent1{
+  grid-column: 1/2;
+ }
+ .imgContent2{
+  grid-column: 2/3;
+ }
+ 
+
+ .item1{
+  grid-row: 1/2;
+  
+ }
+ .item2{
+  grid-row: 2/3;
+  
+ }
+ .item3{
+  grid-row: 3/4;
+  
+ }
+ .item4{
+  grid-row: 4/5;
+  
+ }
+
+ .imgcompnent{
+  margin: 20vh 13vw;
+ }
+
+ .buttons {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ ._button {
+  margin: 5.2vw;
+  padding: 0.8vw 1.5vw;
+  font-size: 0.8vw;
+  background-color: #3a2568;
+  border: none;
+  border-radius: 3.5vw;
+  color: white;
+  cursor: pointer;
+ }
+
+ ._button:hover {
+  background: #C31C7E ;
+  box-shadow: .2rem .2rem 1rem 1px rgba(0, 0, 0, 0.5);
+  scale: 0.95;
+  transition: scale  0.4s ease;
+ }
+
+
+ .signup{
+
+  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+ }
+
+.textMain{
+  font: bold;
+  font-size: 7vw;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  align-self:center;
+  
+}
+.Paragrapg{
+  font-size: 1.2rem;
+  align-self:center;
+  margin-top: 0vh;
+  width:58vw;
+  font-weight: 700;
+  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Sora', sans-serif; */
+  text-align:center ;
+  
+}
+
+.Paragrapg{
+  font-size: 1.2rem;
+  margin-top: 0vh;
+  width:58vw;
+}
+
+ .bg-modal {
+   background-color: rgba(0, 0, 0, 0.8);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   display: none;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .bg-modal_background{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .modal-contents {
+   /* height: 40.78vh; */
+   height: max-content;
+   /* width: 26.04vw; */
+   width: max-content;
+   background-color: rgba(255, 255, 255, 1);
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   border-radius: 4px;
+ }
+
+ .contententBox {
+   display: grid;
+   padding-left: 4vw;
+   padding-right: 4vw;
+   align-content: space-between;
+   justify-content: space-around;
+   align-items: center;
+   justify-items: center;
+   margin-top: 21px;
+
+ }
+
+ .orBox {
+   display: flex;
+   margin: 6px;
+   color: #000000;
+ }
+
+ .signinbuttons {
+
+   margin: 15px auto;
+   display: block;
+   width: 50%;
+   padding: 8px;
+   
+
+ }
+
+ .inputBox {
+  margin: 8px 0px;
+  display: block;
+  width: 88%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 0.1px solid gray;
+ }
+
+ .whiteLine {
+   width: 200px;
+   height: 0.3px;
+   background-color: rgb(0, 0, 0);
+ }
+
+ .close {
+   position: absolute;
+   top: 0;
+   right: 10px;
+   font-size: 42px;
+   color: #333;
+   transform: rotate(45deg);
+   cursor: pointer;
+   background-color: transparent;
+   border: 0px;
+ }
+
+ .close:hover {
+   background-color: transparent;
+   color: #84387b;
+ }
+
+ .buttonsignin{
+  text-align: center;
+ }
+
+
+
+ 
+/* Small devices (landscape phones) */
+@media (max-width: 576px) {
+  .textMain{
+    font-size: 8vw;
+    font-weight: 700;
+  }
+
+  .Paragrapg{
+    font-size: 2.5vw;
+    margin-top: 9vh;
+    width: 83vw;
+  }
+
+    ._button {
+      margin: 5.2vw;
+     }
+    
+
+  
+
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .textMain{
+    font-size: 6vw;
+    font-weight: 700;
+  }
+ 
+
+  .Paragrapg{
+    font-size: 1.2rem;
+    margin-top: 0vh;
+    width:58vw;
+  }
+  ._button {
+    margin: 5.2vw;
+   }
+  
+
+}
+
+/* Large devices (desktops) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .textMain{
+    font-size:6vw;
+    font-weight: 700;
+  }
+
+  .Paragrapg{
+    font-size: 2.0vw;
+    margin-top: 1vh;
+    width: 80vw;
+  }
+  ._button {
+    margin: 5.2vw;
+   }
+  
+
+}
+
+
+
+/* Extra large devices (large desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .textMain{
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .Paragrapg{
+    font-size: 1.2rem;
+    margin-top: 0vh;
+    width:58vw;
+  }
+  ._button {
+    margin: 5.2vw;
+   }
+  
+
+}
+
+/* Extra extra large devices (larger desktops) */
+@media (min-width: 1200px) {
+  .textMain{
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .Paragrapg{
+    font-size: 2.2vh;
+    margin-top: 0vh;
+    width: 58vw;
+  }
+  ._button {
+    margin: 5.2vw;
+   }
+
+
+
+}
+
+
+
+
+
+ /* .Main{
+    display: grid;
+    background-color: aquamarine;
+  
+   }
+
+   .Header{
+    background-color: blue;
+
+   }
+
+   
+   .Elements{
+background-color: blueviolet;
+   }
+
+   .Imgelement{
+background-color: blueviolet;
+   } */
